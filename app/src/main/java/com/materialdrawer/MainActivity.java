@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view,"This is a snackbar",Snackbar.LENGTH_SHORT)
-                        .setAction("Action",null).show();;
+                        .setAction("Action",null).show();
             }
         });
 
